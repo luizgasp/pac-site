@@ -102,6 +102,7 @@ main section iframe {
 #robotica h3 {
   margin: 0.25em;
   font-size: 7em;
+  font-weight: bold;
 }
 
 #robotica p {
@@ -172,6 +173,16 @@ h2 {
   max-width: auto;
   max-height: auto;
   height: 12em;
+}
+
+#code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#code-text {
+  font-size: 5em;
 }
 
 @media (max-width: 1400px) {
