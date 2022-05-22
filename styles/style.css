@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #28B779;
+  --background-color: rgb(13, 17, 23);
+  --text-color: #FFFFFF;
+  --custom-white: rgb(249, 251, 255);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-color)
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+header h1 {
+  font-size: 3.5em;
+}
+
+header nav {
+  display: flex;
+  list-style: none;
+  padding: 16px;
+  padding-top: 1.5em;
+}
+
+header nav li {
+  font-size: 1.2em;
+  padding-left: 4.5em;
+}
+
+header nav li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+header nav li a:after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+header nav li a:hover:after {
+  width: 100%;
+}
+
+#robotica {
+  display: flex;
+  padding: 5em;
+  padding-left: 7em;
+  height: 55em;
+}
+
+main section iframe {
+  width: 300em;
+  height: 40em;
+}
+
+#robotica h3 {
+  margin: 0.25em;
+  font-size: 7em;
+}
+
+#robotica p {
+  margin: 0.25em;
+  margin-left: 2em;
+  font-size: 1.25em;
+  color: grey;
+}
+
+#linha {
+  height: 61em;
+  background-color: var(--custom-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: var(--background-color);
+}
+
+#grupo {
+  height: 35em;
+}
+
+#grupo>h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+  font-size: 3em;
+}
+
+#integrantes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-person {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-person>h5 {
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+.about-person>p {
+  font-size: 0.9em;
+  color: rgb(232, 224, 224);
+}
+
+.circle-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  background-color: #28B779;
+}
+
+.circle-avatar>img {
+  max-width: auto;
+  max-height: auto;
+  height: 12em;
+}
+
+@media (max-width: 1400px) {
+  body {
+    width: 87em;
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+  }
+
+  header h1 {
+    padding-left: 1.5em;
+    font-size: 3.5em;
+  }
+
+  header nav {
+    display: flex;
+    list-style: none;
+    padding-top: 3em;
+  }
+
+  header nav li {
+    font-size: 1.18em;
+  }
+
+  main section iframe {
+    width: 300em;
+    height: 26em;
+  }
+
+  #robotica {
+    display: flex;
+    padding: 5em;
+    padding-left: 6em;
+    height: 45em;
+  }
+
+  #robotica h3 {
+    margin: 0.25em;
+    font-size: 4em;
+  }
+
+  #robotica p {
+    margin: 0.25em;
+    margin-left: 1.3em;
+    font-size: 1em;
+    color: grey;
+  }
+
+  #grupo>h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    font-size: 3em;
+  }
+
+  #integrantes {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .about-person>h5 {
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  .about-person>p {
+    font-size: 1em;
+    padding-bottom: 3em;
+    text-align: center;
+    color: rgb(232, 224, 224);
+  }
+
+  .circle-avatar {
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    margin-left: 0.5em;
+    background-color: #28B779;
+  }
+
+  .circle-avatar>img {
+    max-width: auto;
+    max-height: auto;
+    height: 13em;
+  }
+}

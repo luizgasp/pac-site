@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #28B779;
+  --dark-color: rgb(13, 17, 23);
+  --custom-white: rgb(249, 251, 255);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+}
+
+.componentes-titulo>h2 {
+  font-size: 7em;
+  color: var(--custom-white);
+}
+
+.icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4em;
+  height: 4em;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.icon img {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+#componentes .card-title {
+  margin-left: 2.4em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.75em;
+}
+
+#componentes .description {
+  margin-left: 5em;
+  width: 20em;
+  font-size: 14px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5em;
+  padding-left: 1em;
+}
