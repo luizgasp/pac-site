@@ -102,6 +102,7 @@ main section iframe {
 #robotica h3 {
   margin: 0.25em;
   font-size: 7em;
+  font-weight: bold;
 }
 
 #robotica p {
@@ -174,6 +175,16 @@ h2 {
   height: 12em;
 }
 
+#code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#code-text {
+  font-size: 5em;
+}
+
 @media (max-width: 1400px) {
   body {
     width: 87em;
@@ -233,9 +244,11 @@ h2 {
   }
 
   #integrantes {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    align-content: center;
+    padding-right: 4em;
   }
 
   .about-person>h5 {
@@ -248,21 +261,22 @@ h2 {
   .about-person>p {
     font-size: 1em;
     padding-bottom: 3em;
-    text-align: center;
     color: rgb(232, 224, 224);
   }
 
   .circle-avatar {
-    width: 13em;
-    height: 13em;
+    display: flex;
+    width: 9em;
+    height: 9em;
     border-radius: 50%;
     margin-left: 0.5em;
     background-color: #28B779;
   }
 
   .circle-avatar>img {
+    display: flex;
     max-width: auto;
     max-height: auto;
-    height: 13em;
+    height: 6.5em;
   }
 }
